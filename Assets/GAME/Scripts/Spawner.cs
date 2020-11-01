@@ -4,27 +4,34 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] GameObject przeciwnikPrefab;
-    [SerializeField] float odstepPomiedzyPrzeciwnikami;
+    [Header("Ustawienia ogólne")]
+    [SerializeField] GameObject przeciwnikPrefab; 
     [SerializeField] float ograniczenieX;
 
-    [SerializeField] float wspolczynnikPrzyspieszenia;
+    [Header("Ustawienia trudności")]
+    [SerializeField] float odstepMiedzyPrzeciwnikami;
+    [SerializeField] float zmianaOstepu;
+    [SerializeField] float predkoscPrzeciwnikow;
+    [SerializeField] float zmianaPredkosci;  
     [SerializeField] int coIluPrzyspieszamy;
 
     float nastepnyPrzeciwnik;
-    int iluPrzeciwnikowBylo;
+    int licznikPrzeciwnikow;
 
     void StworzPrzeciwnika()
     {
         float miejsceX = Random.Range(-ograniczenieX, ograniczenieX);
         Vector3 miejsce = transform.position + new Vector3(miejsceX, 0, 0);
 
-        Instantiate(przeciwnikPrefab, miejsce, Quaternion.LookRotation(transform.forward));
-        iluPrzeciwnikowBylo++;
+        var przeciwnik = Instantiate(przeciwnikPrefab, miejsce, Quaternion.LookRotation(transform.forward));
+        przeciwnik.GetComponent<Przeciwnik_ruch>().predkosc = predkoscPrzeciwnikow;
 
-        if (iluPrzeciwnikowBylo % coIluPrzyspieszamy == 0)
+        licznikPrzeciwnikow++;
+
+        if (licznikPrzeciwnikow % coIluPrzyspieszamy == 0)
         {
-            odstepPomiedzyPrzeciwnikami *= wspolczynnikPrzyspieszenia;
+            odstepMiedzyPrzeciwnikami *= zmianaOstepu;
+            predkoscPrzeciwnikow *= zmianaPredkosci;
         }
     }
 
@@ -34,7 +41,7 @@ public class Spawner : MonoBehaviour
         if (Time.time >= nastepnyPrzeciwnik)
         {
             StworzPrzeciwnika();
-            nastepnyPrzeciwnik += odstepPomiedzyPrzeciwnikami;
+            nastepnyPrzeciwnik += odstepMiedzyPrzeciwnikami;
         }
     }
 }

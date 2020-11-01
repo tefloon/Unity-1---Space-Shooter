@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2876251189493461433}
   - component: {fileID: 2850917720468236287}
   - component: {fileID: 2860273021705817139}
+  - component: {fileID: 1510365662233920}
+  - component: {fileID: 542400277}
   - component: {fileID: 4125604452808246098}
   - component: {fileID: 4174531925398791591}
   - component: {fileID: 1510365662233915}
-  - component: {fileID: 1510365662233920}
   - component: {fileID: 8161441055364351503}
   m_Layer: 0
   m_Name: Gracz
@@ -88,6 +89,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1510365662233920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873545298557152129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.638825, y: 3.256053, z: 10.850526}
+  m_Center: {x: 0, y: -0.0000007748604, z: 0}
+--- !u!54 &542400277
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873545298557152129}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!82 &4125604452808246098
 AudioSource:
   m_ObjectHideFlags: 0
@@ -217,19 +247,6 @@ MonoBehaviour:
   predkoscPocisku: 7
   odstepStrzalow: 0.2
   czasZyciaPocisku: 7
---- !u!65 &1510365662233920
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2873545298557152129}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.638825, y: 3.256053, z: 10.850526}
-  m_Center: {x: 0, y: -0.0000007748604, z: 0}
 --- !u!114 &8161441055364351503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfc3749bcc3ea04388a5a08e6ac1f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  efektSmierci: {fileID: 159434481315888669, guid: 4f57a4afc18c2cf4981284aa17863b03, type: 3}
   MaxHP: 100
 --- !u!1 &2873634084447480263
 GameObject:

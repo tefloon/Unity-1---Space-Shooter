@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Zycie : MonoBehaviour
 {
+    [SerializeField] GameObject efektSmierci;
+
     public int MaxHP;
     int ObecneHP;
 
@@ -24,6 +26,8 @@ public class Zycie : MonoBehaviour
 
     void Smierc()
     {
+        if (efektSmierci != null) Instantiate(efektSmierci, transform.position, Quaternion.identity);
+
         print("Zginąłem " + gameObject.name);
         Destroy(gameObject);
     }

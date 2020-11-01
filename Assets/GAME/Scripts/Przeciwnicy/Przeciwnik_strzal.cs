@@ -12,8 +12,6 @@ public class Przeciwnik_strzal : MonoBehaviour
     [SerializeField] float odstepStrzalow;
     [SerializeField] float czasZyciaPocisku;
 
-    [SerializeField] bool czyNamierza;
-
     AudioSource odtwarzacz;
     Transform graczTransform;
     float godzinaNastepnegoStrzalu = 0;
@@ -21,7 +19,6 @@ public class Przeciwnik_strzal : MonoBehaviour
     private void Start()
     {
         odtwarzacz = GetComponent<AudioSource>();
-        graczTransform = FindObjectOfType<Gracz_ruch>().transform;
     }
 
     void Update()
@@ -39,18 +36,7 @@ public class Przeciwnik_strzal : MonoBehaviour
         Rigidbody rb = pocisk.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            Vector3 kierunek = new Vector3();
-
-
-            if (czyNamierza == true) 
-            {
-                kierunek = graczTransform.position - transform.position;
-                kierunek = kierunek.normalized;
-
-            }
-            else { kierunek = transform.forward; }
-
-            rb.AddForce(predkoscPocisku * kierunek, ForceMode.VelocityChange);
+            rb.AddForce(predkoscPocisku * transform.forward, ForceMode.VelocityChange);
         }
 
         odtwarzacz.PlayOneShot(dzwiekStrzalu);

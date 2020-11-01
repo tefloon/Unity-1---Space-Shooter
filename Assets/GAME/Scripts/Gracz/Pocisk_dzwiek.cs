@@ -15,10 +15,4 @@ public class Pocisk_dzwiek : MonoBehaviour
         odtwarzacz = GetComponent<AudioSource>();
         odtwarzacz.PlayOneShot(dzwiekWybuchu);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

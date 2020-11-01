@@ -9332,7 +9332,7 @@ GameObject:
   - component: {fileID: -1141086489871076520}
   - component: {fileID: 1841493501602951632}
   m_Layer: 0
-  m_Name: Wybuch
+  m_Name: Wybuch_pocisku
   m_TagString: FxTemporaire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
