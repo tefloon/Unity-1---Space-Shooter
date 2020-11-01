@@ -55,21 +55,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\IMPORTED\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
-    <Compile Include="Assets\GAME\Scripts\Gracz_ruch.cs" />
-    <Compile Include="Assets\GAME\Scripts\Gracz_strzal.cs" />
-    <Compile Include="Assets\GAME\Scripts\Pocisk_wybuch.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
+    <Compile Include="Assets\GAME\Scripts\Gracz\Gracz_strzal.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\GAME\Scripts\Gracz\Gracz_ruch.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\GAME\Scripts\Gracz\Pocisk_dzwiek.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\GAME\Scripts\Gracz\Pocisk_wybuch.cs" />
+    <Compile Include="Assets\IMPORTED\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
-    <Compile Include="Assets\GAME\Scripts\Pocisk_dzwiek.cs" />
+    <Compile Include="Assets\GAME\Scripts\Przeciwnicy\Przeciwnik_ruch.cs" />
+    <Compile Include="Assets\GAME\Scripts\Przeciwnicy\Przeciwnik_strzal.cs" />
+    <Compile Include="Assets\GAME\Scripts\Spawner.cs" />
+    <Compile Include="Assets\GAME\Scripts\Zycie.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />

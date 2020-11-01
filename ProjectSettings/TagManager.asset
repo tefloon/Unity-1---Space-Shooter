@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - Przeciwnik
+  - Gracz
   layers:
   - Default
   - TransparentFX
