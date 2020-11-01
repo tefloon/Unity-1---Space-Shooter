@@ -6,15 +6,15 @@ public class Zycie : MonoBehaviour
 {
     [SerializeField] GameObject efektSmierci;
 
-    public int MaxHP;
-    int ObecneHP;
+    public float MaxHP;
+    protected float ObecneHP;
 
-    void Start()
+    protected virtual void Start()
     {
         ObecneHP = MaxHP;    
     }
 
-    public void ZadajObrazenia(int obrazenia)
+    public virtual void ZadajObrazenia(int obrazenia)
     {
         ObecneHP = ObecneHP - obrazenia;
 
@@ -24,10 +24,10 @@ public class Zycie : MonoBehaviour
         }
     }
 
-    void Smierc()
+    public virtual void Smierc()
     {
         if (efektSmierci != null) Instantiate(efektSmierci, transform.position, Quaternion.identity);
-
+        FindObjectOfType<ManagerScript>().DodajPunkt();
         print("Zginąłem " + gameObject.name);
         Destroy(gameObject);
     }

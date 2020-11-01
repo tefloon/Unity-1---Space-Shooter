@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5506740437492512815}
   - component: {fileID: 5517600819863100889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5509498294406857981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 5511230478954620346}
   - component: {fileID: 690384849492545490}
   - component: {fileID: -9007130533848956609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pocisk_Przeciwnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}

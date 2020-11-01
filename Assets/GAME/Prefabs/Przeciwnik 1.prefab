@@ -314,7 +314,7 @@ MonoBehaviour:
   dzwiekStrzalu: {fileID: 0}
   miejsceStrzalu: {fileID: 7002682534464264864}
   predkoscPocisku: 3
-  odstepStrzalow: 1
+  odstepStrzalow: 3
   czasZyciaPocisku: 7
 --- !u!114 &7755710573413671464
 MonoBehaviour:
@@ -328,8 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfc3749bcc3ea04388a5a08e6ac1f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efektSmierci: {fileID: 1381312680179362683, guid: f821c567bd1a59e41949bf523a37f906, type: 3}
-  dzwiekSmierci: {fileID: 8300000, guid: 4969ee79c4366014689c98f4e95d9640, type: 3}
+  efektSmierci: {fileID: 7045328275696236147, guid: e59c92ea2de07e74ab297b76ea2a50fa, type: 3}
   MaxHP: 60
 --- !u!1 &5443333289539902401
 GameObject:

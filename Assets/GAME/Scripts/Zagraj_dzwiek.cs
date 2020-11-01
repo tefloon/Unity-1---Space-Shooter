@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class Pocisk_dzwiek : MonoBehaviour
+public class Zagraj_dzwiek : MonoBehaviour
 {
     [SerializeField] AudioClip dzwiekWybuchu;
     AudioSource odtwarzacz;
