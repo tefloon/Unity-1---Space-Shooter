@@ -8,13 +8,7 @@ public class Gracz_ruch : MonoBehaviour
     [SerializeField] float ograniczenieGoraDol;
     [SerializeField] float ograniczeniePrawaLewa;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         Ruch();
