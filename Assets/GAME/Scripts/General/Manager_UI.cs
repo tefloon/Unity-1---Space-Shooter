@@ -13,16 +13,13 @@ public class Manager_UI : MonoBehaviour
 
     public void StartNewGame()
     {
-        print("Sobir");
         SceneManager.LoadScene("__MAIN__");
     }
     
     public void Quit()
     {
-
-        print("Wypad");
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
 }

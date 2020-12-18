@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6510C6B8-E7F2-02BF-8176-A5342FB5BF17}</ProjectGuid>
+    <ProjectGuid>{92CD221C-E8E8-372D-F9AB-097CEC3FF551}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\GAME\Scripts\Gracz\Gracz_strzal.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\GAME\Scripts\General\Manager_UI.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\GAME\Scripts\Przeciwnicy\Przeciwnik_ruch.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -71,14 +72,13 @@
     <Compile Include="Assets\GAME\Scripts\Zycie.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\GAME\Scripts\General\ManagerScript.cs" />
     <Compile Include="Assets\GAME\Scripts\Gracz\Pocisk_wybuch.cs" />
     <Compile Include="Assets\IMPORTED\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
     <Compile Include="Assets\GAME\Scripts\Przeciwnicy\Metero_ruch.cs" />
+    <Compile Include="Assets\GAME\Scripts\General\PunktyScript.cs" />
     <Compile Include="Assets\IMPORTED\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\GAME\Scripts\Spawner.cs" />
-    <Compile Include="Assets\GAME\Scripts\General\Manager_UI.cs" />
-    <Compile Include="Assets\GAME\Scripts\General\ManagerScript.cs" />
-    <Compile Include="Assets\GAME\Scripts\General\PunktyScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\IMPORTED\TextMesh Pro\Shaders\TMPro.cginc" />
