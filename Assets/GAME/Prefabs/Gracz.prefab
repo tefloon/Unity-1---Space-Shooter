@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4125604452808246098}
   - component: {fileID: 4174531925398791591}
   - component: {fileID: 1510365662233915}
-  - component: {fileID: 8161441055364351503}
+  - component: {fileID: 542400278}
   m_Layer: 0
   m_Name: Gracz
   m_TagString: Gracz
@@ -247,7 +247,7 @@ MonoBehaviour:
   predkoscPocisku: 7
   odstepStrzalow: 0.2
   czasZyciaPocisku: 7
---- !u!114 &8161441055364351503
+--- !u!114 &542400278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,11 +256,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2873545298557152129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcfc3749bcc3ea04388a5a08e6ac1f66, type: 3}
+  m_Script: {fileID: 11500000, guid: b84a4c07debf90c46b11989d0754e654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   efektSmierci: {fileID: 159434481315888669, guid: 4f57a4afc18c2cf4981284aa17863b03, type: 3}
   MaxHP: 100
+  zyciePasek: {fileID: 0}
+  zycieTekst: {fileID: 0}
+  maxDlugosc: 0
 --- !u!1 &2873634084447480263
 GameObject:
   m_ObjectHideFlags: 0

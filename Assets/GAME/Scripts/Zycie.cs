@@ -11,7 +11,7 @@ public class Zycie : MonoBehaviour
 
     protected virtual void Start()
     {
-        ObecneHP = MaxHP;    
+        ObecneHP = MaxHP;
     }
 
     public virtual void ZadajObrazenia(int obrazenia)
